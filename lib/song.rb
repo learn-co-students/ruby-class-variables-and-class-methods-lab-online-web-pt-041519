@@ -39,9 +39,10 @@ class Song
     genres.each do |genre| 
       count = 0 
        @@library.each do |song, cats|
-          if cats[:genre] == genre
+          if cats[:genre] == genre 
             count +=1 
-          end  
+          end
+         
         end  
         genre_count[genre] = count 
     end  
